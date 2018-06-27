@@ -1,27 +1,21 @@
-# MfpUserloginAngular
+## MFP UserLogin Angular
+A sample web application on Angular 6 demonstrating use of the CredentialsValidation Security Check of MobileFirst Platform Foundation.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Usage
 
-## Code scaffolding
+1. Use either Maven, MobileFirst CLI or your IDE of choice to [build and deploy the available `ResourceAdapter` and `UserLogin` adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ The UserLogin Security Check and Resource adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/SecurityCheckAdapters/tree/release80.
 
-## Build
+2. From a command-line window, navigate to the project's root folder and run the commands:
+ - `mfpdev app register` - to register the application.
+ -  Map the `accessRestricted` scope to the `UserLogin` security check in the MobileFirst Operations Console.
+ - `ng serve --proxy-config proxy.conf.json` - to run the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3. Run the application in any browser. Press the **Get Balance** button and enter username and password as "vittal" to display the balance.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Supported Levels
+IBM MobileFirst Platform Foundation 8.0
