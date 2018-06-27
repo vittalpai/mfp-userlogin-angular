@@ -3,6 +3,8 @@ A sample web application on Angular 6 demonstrating use of the CredentialsValida
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+### Tutorial
+https://mobilefirstplatform.ibmcloud.com/blog/2018/06/27/integrating-mobilefirst-foundation-8-in-angular-web-apps/
 
 ### Usage
 
