@@ -25,7 +25,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/ibm-mfp-web-sdk/ibmmfpf.js",
+              "node_modules/sjcl/sjcl.js",
+              "node_modules/jssha/src/sha.js"
+            ]
           },
           "configurations": {
             "production": {
