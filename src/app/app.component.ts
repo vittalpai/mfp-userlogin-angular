@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   getBalance() {
-  var resourceRequest = new WL.ResourceRequest("/adapters/ResourceAdapter/balance",WL.ResourceRequest.GET);
+  var resourceRequest = new WLResourceRequest("/adapters/ResourceAdapter/balance",WLResourceRequest.GET);
   resourceRequest.send().then(
      (response) => {
       console.log('-->  getBalance(): Success ', response);
